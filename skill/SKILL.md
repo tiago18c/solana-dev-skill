@@ -1,7 +1,12 @@
 ---
 name: solana-dev
-description: End-to-end Solana development playbook (Jan 2026). Prefer Solana Foundation framework-kit (@solana/client + @solana/react-hooks) for React/Next.js UI. Prefer @solana/kit for all new client/RPC/transaction code. When legacy dependencies require web3.js, isolate it behind @solana/web3-compat (or @solana/web3.js as a true legacy fallback). Covers wallet-standard-first connection (incl. ConnectorKit), Anchor/Pinocchio programs, Codama-based client generation, LiteSVM/Mollusk/Surfpool testing, and security checklists.
+description: Use when user asks to "build a Solana dapp", "write an Anchor program", "create a token", "debug Solana errors", "set up wallet connection", "test my Solana program", or "deploy to devnet". End-to-end Solana development playbook covering wallet connection, Anchor/Pinocchio programs, Codama client generation, LiteSVM/Mollusk/Surfpool testing, and security checklists. Prefers framework-kit (@solana/client + @solana/react-hooks) for UI, wallet-standard-first connection (incl. ConnectorKit), @solana/kit for client/RPC code, and @solana/web3-compat for legacy boundaries.
 user-invocable: true
+license: MIT
+compatibility: Requires Node.js 18+, Rust toolchain, Solana CLI, Anchor CLI
+metadata:
+  author: Solana Foundation
+  version: 1.1.0
 ---
 
 # Solana Development Skill (framework-kit-first)
@@ -79,17 +84,17 @@ When you implement changes, provide:
 - a short "risk notes" section for anything touching signing/fees/CPIs/token transfers
 
 ## Progressive disclosure (read when needed)
-- UI + wallet + hooks: [frontend-framework-kit.md](frontend-framework-kit.md)
-- Kit ↔ web3.js boundary: [kit-web3-interop.md](kit-web3-interop.md)
-- Anchor programs: [programs-anchor.md](programs-anchor.md)
-- Pinocchio programs: [programs-pinocchio.md](programs-pinocchio.md)
-- Testing strategy: [testing.md](testing.md)
-- IDLs + codegen: [idl-codegen.md](idl-codegen.md)
-- Payments: [payments.md](payments.md)
-- Confidential transfers: [confidential-transfers.md](confidential-transfers.md)
-- Security checklist: [security.md](security.md)
-- Reference links: [resources.md](resources.md)
-- **Version compatibility:** [compatibility-matrix.md](compatibility-matrix.md)
-- **Common errors & fixes:** [common-errors.md](common-errors.md)
-- **Surfpool (local network):** [surfpool.md](surfpool.md)
-- **Surfpool cheatcodes:** [surfpool-cheatcodes.md](surfpool-cheatcodes.md)
+- UI + wallet + hooks: [frontend-framework-kit.md](references/frontend-framework-kit.md)
+- Kit ↔ web3.js boundary: [kit-web3-interop.md](references/kit-web3-interop.md)
+- Anchor programs: [programs-anchor.md](references/programs-anchor.md)
+- Pinocchio programs: [programs-pinocchio.md](references/programs-pinocchio.md)
+- Testing strategy: [testing.md](references/testing.md)
+- IDLs + codegen: [idl-codegen.md](references/idl-codegen.md)
+- Payments: [payments.md](references/payments.md)
+- Confidential transfers: [confidential-transfers.md](references/confidential-transfers.md)
+- Security checklist: [security.md](references/security.md)
+- Reference links: [resources.md](references/resources.md)
+- **Version compatibility:** [compatibility-matrix.md](references/compatibility-matrix.md)
+- **Common errors & fixes:** [common-errors.md](references/common-errors.md)
+- **Surfpool (local network):** [surfpool.md](references/surfpool.md)
+- **Surfpool cheatcodes:** [surfpool-cheatcodes.md](references/surfpool-cheatcodes.md)
