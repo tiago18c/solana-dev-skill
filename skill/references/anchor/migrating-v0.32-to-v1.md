@@ -448,7 +448,7 @@ Add to `.gitignore`:
 CI — surfpool must be installed explicitly:
 ```yaml
 - name: Install surfpool
-  run: cargo install surfpool --version <pinned-version>
+  run: curl -sL https://run.surfpool.run/ | bash
 ```
 
 ---
